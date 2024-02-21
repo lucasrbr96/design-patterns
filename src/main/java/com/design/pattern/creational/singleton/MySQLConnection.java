@@ -3,7 +3,7 @@ package com.design.pattern.creational.singleton;
 public class MySQLConnection{
 
     private static MySQLConnection connection;
-    private String connectionString;
+    private final String connectionString;
 
     //constructor private - prevent building new ones
     private MySQLConnection(){
