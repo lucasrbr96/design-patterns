@@ -7,7 +7,7 @@ public class MySQLConnection{
 
     //constructor private - prevent building new ones
     private MySQLConnection(){
-        connectionString = "jdbc:mysql://localhost:3306/myDatabase";
+        connectionString = "jdbc:mysql://localhost:3306/myDatabase" + Math.random();
     }
 
     //if it already exists, returns the created one
