@@ -36,6 +36,8 @@ public class Product {
         private final Product product;
 
         public Builder(final String name) {
+            if(name == null)
+                throw new IllegalArgumentException("'name' is Required field");
             // Initializes the Product object in the Builder constructor
             product = new Product(name);
         }
